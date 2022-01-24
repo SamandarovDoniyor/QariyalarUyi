@@ -27,7 +27,7 @@ SECRET_KEY = '03uqmk_98#3pe=-dkds+e=b!%ltbysi%b!h98y=fd96xk=3hwa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['qariyalaruyi.herokuapp.com']
 
 
 # Application definition
@@ -79,8 +79,16 @@ WSGI_APPLICATION = 'QariyalarUyi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+                
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dfha1dhdpm7htb',
+        'USER':'dsudvgkoavftiq',
+        'PASSWORD':'be55de4df457e4e8a9cc24f3d6f295da073a0144ad6a5fdf19c0a754594b209e',
+        'HOST':'ec2-35-174-56-18.compute-1.amazonaws.com',
+        'PORT':'5432',
+        
     }
 }
 
