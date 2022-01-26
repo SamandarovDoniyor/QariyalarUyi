@@ -1,4 +1,4 @@
-from os import name
+
 from django.urls.conf import path
 from backend import views
 
