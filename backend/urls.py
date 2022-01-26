@@ -12,11 +12,4 @@ urlpatterns = [
     path('Archive/',views.Archive,name="Archive"),
     path('videogallery/',views.VideoGalary,name='VideoGallary'),
     path('Photogallery/',views.PhotoGalary,name='photos'),
- 
-    
-   
-    
-        
-    
-    
-]
+    ]
